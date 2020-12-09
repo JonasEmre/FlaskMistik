@@ -1,4 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1>Ana Sayfa</h1>
+    {% for char in chars %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ char.name }}</a>
+              <small class="text-muted">{{ char.hp }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ char.mana }}</a></h2>
+            <p class="article-content">{{ char.strength }}</p>
+          </div>
+        </article>
+    {% endfor %}
 {% endblock %}
