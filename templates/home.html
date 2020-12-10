@@ -5,10 +5,10 @@
           <div class="media-body">
             <div class="article-metadata">
               <a class="mr-2" href="#">{{ char.name }}</a>
-              <small class="text-muted">{{ char.hp }}</small>
+              <small class="text-muted">{{ char.date_created.strftime('%Y-%m-%d') }}</small>
             </div>
-            <h2><a class="article-title" href="#">{{ char.mana }}</a></h2>
-            <p class="article-content">{{ char.strength }}</p>
+            <h2><a class="article-title" href="#">{{ char.dexterity }}</a></h2>
+            <p class="article-content">{{ char.intelligence }}</p>
           </div>
         </article>
     {% endfor %}
